@@ -43,4 +43,9 @@ public class Paveiksliukas {
     public void setUrl(String url) {
         this.url = url;
     }
+
+    @Override
+    public String toString(){
+        return "ID: " + getId() + ". Base64image: " + getBase64Image() + ". ";
+    }
 }

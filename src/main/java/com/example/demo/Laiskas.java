@@ -1,6 +1,5 @@
 package com.example.demo;
 
-import java.time.LocalDateTime;
 
 public class Laiskas {
     private int id;
@@ -44,6 +43,11 @@ public class Laiskas {
 
     public void setTurinys(String turinys) {
         this.turinys = turinys;
+    }
+
+    @Override
+    public String toString(){
+        return "Gavėjas: " + getGavejas() + ". Turinys: " + getTurinys() + ". ";
     }
 
 }
